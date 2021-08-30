@@ -1,0 +1,69 @@
+<!-- <div class="container-login">
+        <h2>Login</h2>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+        <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+            <div *ngIf="f.username.errors.required">Username is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+            <div *ngIf="f.password.errors.required">Password is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary mt-3">Login</button>
+        <a routerLink="/register" class="btn btn-link mt-3">Register</a>
+        <a routerLink="/admin" class="btn btn-link mt-3">Admin</a>
+    </div>
+</form>
+    </div> 
+          
+
+ -->
+<div class="container-main" style="background-image: url(assets/images/512x512bb.jpg)">
+ <div id="login">
+    <!-- <h2 class="text-center neon pt-5" style="color: rgba(19, 230, 184, 0.5);">ADVANCING THE WAY THE WORLD PAYS,BANKS AND INVESTS</h2> -->
+    <div class="container-fluid">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6 mb-3px">
+                <div id="login-box" class="col-md-12">
+                    <div class="sup">
+                        <form id="login-form" class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                            <h3 class="text-center" style="color: white;">Login</h3>
+                            <div class="form-group mt-3">
+                                <!-- <label for="username">Username</label> -->
+                                <input type="text" placeholder="Username" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" style="background-color: rgb(248, 248, 240); opacity: 1;"/>
+                                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                                    <div *ngIf="f.username.errors.required">Username is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group mt-4">
+                                <!-- <label for="password">Password</label> -->
+                                <input type="password" placeholder="Password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                    <div *ngIf="f.password.errors.required">Password is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                                <!-- <input type="submit" name="submit" class="btn btn-info btn-md" value="Login"> -->
+                                <!-- <a id="btn-login" href="#" class="btn btn-info btn-md">Login  </a> -->
+                                <button type="submit" class="btn btn-dark">Login</button>
+                            </div>
+                            <div id="register-link" class="text-right">
+                                <label for="register">Register </label><a routerLink="/register" class="text-info"> here</a>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

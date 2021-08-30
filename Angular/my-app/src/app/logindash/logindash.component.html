@@ -1,0 +1,23 @@
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th scope="col">Fullname</th>
+            <th scope="col">Username</th>
+            <th scope="col">Email</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{users.fullname}}</td>
+            <td>{{users.username}}</td>
+            <td>{{users.email}}</td>
+            <td>
+                <button class="btn btn-info">View TimeSheet</button>
+                <button (click)="logout()" class="btn btn-primary">Logout</button>
+                <!-- <button (click)="deleteUser(u)" class="btn btn-danger mx-3">Delete</button> -->
+                <!-- <button class="btn btn-primary">Lock/Unlock</button> -->
+            </td>
+        </tr>
+    </tbody>
+</table> 

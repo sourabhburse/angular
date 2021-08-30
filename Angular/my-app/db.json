@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "attempt": 3,
+      "fullname": "string",
+      "username": "string",
+      "email": "string",
+      "street": "string",
+      "city": "string",
+      "zip": "string",
+      "password": "string",
+      "confirmPassword": "string"
+    },
+    {
+      "fullname": "Supriya Anil Deshmukh",
+      "username": "SDeshmukh",
+      "email": "S@gmail.com",
+      "street": "Pune",
+      "city": "Pune",
+      "zip": "123456",
+      "password": "S123456",
+      "confirmPassword": "S123456",
+      "acceptTerms": "true",
+      "id": 2
+    },
+    {
+      "fullname": "Anushka Anil Deshmukh",
+      "username": "Anushka",
+      "email": "A@gmail.com",
+      "street": "Pune",
+      "city": "Kondhwa",
+      "zip": "123456",
+      "password": "Anushka",
+      "confirmPassword": "Anushka",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+
+<div class="container mt-5">
+    <button (click)="logout()" class="btn btn-primary">Logout</button>
+</div>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th scope="col">Fullname</th>
+            <th scope="col">Username</th>
+            <th scope="col">Email</th>
+            <th scope="col">Status</th>
+            <th scope="col sp 3">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let u of users">
+            <td>{{u.fullname}}</td>
+            <td>{{u.username}}</td>
+            <td>{{u.email}}</td>
+            <td>
+            <button class="btn btn-info">Lock/Unlock</button></td>
+            <td>
+                <button (click)="deleteUser(u)" class="btn btn-danger mx-3">Delete</button>
+                
+                <!-- <button class="btn btn-primary">Lock/Unlock</button> -->
+            </td>
+        </tr>
+    </tbody>
+</table>
